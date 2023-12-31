@@ -11,7 +11,6 @@ export const getUserAction = (params) => async (dispatch) => {
 };
 
 export const updateUserAction = (params, data) => async (dispatch) => {
-  console.log(params);
   const response = await updateUser(params, data);
   dispatch({
     type: actions.UPDATE_USER_DATA,
